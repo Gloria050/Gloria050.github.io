@@ -3,77 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zhixin (Gloria) Hao - Resume</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .section h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-        }
-        ul {
-            list-style-type: disc;
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-    </style>
+    <title>Gloria Hao - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Zhixin (Gloria) Hao</h1>
-    <p>Email: <a href="mailto:zhao3@scu.edu">zhao3@scu.edu</a></p>
-    <p>Phone: 516-468-2849</p>
-    <p>LinkedIn: <a href="http://www.linkedin.com/in/zhixin-hao-33b85b328" target="_blank">www.linkedin.com/in/zhixin-hao-33b85b328</a></p>
+    <div class="container">
+        <!-- 左侧分栏 -->
+        <div class="sidebar">
+            <h2>Menu</h2>
+            <ul class="menu">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#photos">Daily Life Photos</a></li>
+            </ul>
+        </div>
 
-    <div class="section">
-        <h2>Education</h2>
-        <p><strong>Santa Clara University</strong> - Master of Information System (Expected June 2026)</p>
-        <p>Courses: Data Analytics with Python, Data Management, Natural Language Processing, Big Data Modeling, Reinforcement Learning</p>
-        <p><strong>Hubei University of Economics</strong> - Bachelor of Accounting | GPA: 3.3/4.0 (June 2021)</p>
-    </div>
+        <!-- 右侧主内容 -->
+        <div class="main-content">
+            <!-- 关于我 -->
+            <section id="about" class="section">
+                <div class="header">
+                    <img src="your-photo.jpg" alt="Profile Photo" class="profile-photo">
+                </div>
+                <div class="intro">
+                    <h1>Gloria Hao</h1>
+                    <p><strong>From:</strong> China</p>
+                    <p><strong>Current Major:</strong> Management Information Systems (MIS)</p>
+                    <p><strong>Hobbies:</strong> Ballet, Crime Novels, German Shepherd Dogs, All Cats, Shooting Firearms</p>
+                </div>
+            </section>
 
-    <div class="section">
-        <h2>Professional Experience</h2>
-        <p><strong>Data Analyst Intern</strong> - EchoPlus LLC (June 2024 – Sep 2024, Santa Clara, CA)</p>
-        <ul>
-            <li>Consolidated data from six sources (1.32 million Yelp users) into a MySQL database for efficient analysis.</li>
-            <li>Improved sentiment analysis precision by 17% using TextBlob in Python on 5.26 million reviews.</li>
-            <li>Optimized player retention by 10% using Random Forest and K-Means Clustering for behavior analysis.</li>
-        </ul>
-        <p><strong>Accountant</strong> - Tianjin Yinghua International School (Sep 2021 – Mar 2024, Tianjin, CN)</p>
-        <ul>
-            <li>Improved cost tracking efficiency by 12% through Python dashboards (Pandas and Matplotlib).</li>
-        </ul>
-        <p><strong>Finance Intern</strong> - China Coal Energy Company Limited (Mar 2021 – Sep 2021, Shanxi, CN)</p>
-        <ul>
-            <li>Increased reporting clarity by 35% through Tableau dashboards for client trend analysis.</li>
-        </ul>
-    </div>
+            <!-- 简历部分 -->
+            <section id="resume" class="section">
+                <h2>Resume</h2>
+                <h3>Professional Experience</h3>
+                <ul>
+                    <li><strong>Data Analyst Intern</strong> - EchoPlus LLC (June 2024 – Sep 2024)
+                        <ul>
+                            <li>Consolidated data from 1.32 million users into a MySQL database for analysis.</li>
+                            <li>Improved sentiment analysis accuracy by 17% using Python.</li>
+                            <li>Boosted player retention by 10% through machine learning models.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Accountant</strong> - Tianjin Yinghua International School (Sep 2021 – Mar 2024)
+                        <ul>
+                            <li>Improved cost tracking efficiency by 12% using Python dashboards.</li>
+                            <li>Managed $500,000 annual budget and optimized expenditure control.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Finance Intern</strong> - China Coal Energy Company Limited (Mar 2021 – Sep 2021)
+                        <ul>
+                            <li>Increased reporting clarity by 35% through Tableau dashboards.</li>
+                        </ul>
+                    </li>
+                </ul>
 
-    <div class="section">
-        <h2>Skills</h2>
-        <p><strong>Programming:</strong> SQL, Python (Pandas, Scikit-Learn, Numpy, Matplotlib, PyTorch), R</p>
-        <p><strong>Analytics:</strong> Machine Learning (Random Forest, XGBoost, NLP, Time Series Analysis), Data Visualization (Tableau, PowerBI, Shiny)</p>
-    </div>
+                <h3>Education</h3>
+                <p><strong>Santa Clara University</strong> - Master’s in Management Information Systems (MIS)</p>
 
-    <div class="section">
-        <h2>Projects</h2>
-        <p><strong>Sentiment Analysis on Twitter/X (2024)</strong></p>
-        <ul>
-            <li>Analyzed 350K+ tweets about Trump, uncovering a weak negative sentiment using Python.</li>
-            <li>Improved sentiment classification accuracy with machine learning techniques.</li>
-        </ul>
+                <h3>Skills</h3>
+                <ul>
+                    <li>Data Analysis: Python, SQL, Tableau</li>
+                    <li>Financial Management: QuickBooks, ERP Systems</li>
+                    <li>Languages: English, Chinese</li>
+                </ul>
+            </section>
+
+            <!-- 日常生活照片 -->
+            <section id="photos" class="section">
+                <h2>Daily Life Photos</h2>
+                <div class="gallery">
+                    <div class="photo">
+                        <img src="8231736453479_.pic.jpg" alt="Shooting Range" />
+                        <p>At the Shooting Range with Classmates</p>
+                    </div>
+                    <div class="photo">
+                        <img src="8241736453531_.pic.jpg" alt="German Shepherd Dog" />
+                        <p>My Favorite Dog</p>
+                    </div>
+                    <div class="photo">
+                        <img src="8261736453666_.pic.jpg" alt="With Cousin" />
+                        <p>With My Cousin</p>
+                    </div>
+                    <div class="photo">
+                        <img src="8271736453765_.pic.jpg" alt="With Grandma" />
+                        <p>With My Grandma</p>
+                    </div>
+                    <div class="photo">
+                        <img src="8281736454160_.pic.jpg" alt="Christmas with Friend" />
+                        <p>Christmas with My Best Friend</p>
+                    </div>
+                    <div class="photo">
+                        <img src="8291736454271_.pic.jpg" alt="Ballet Dance" />
+                        <p>Practicing Ballet Dance</p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
 </body>
 </html>
