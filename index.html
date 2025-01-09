@@ -15,13 +15,45 @@
             margin: 20px 0;
         }
 
-        /* 鼠标悬停图片放大效果 */
-        .gallery .photo img {
-            transition: transform 0.3s ease;
-            cursor: pointer;
+        /* 图片画廊调整 */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
         }
-        .gallery .photo img:hover {
+        .photo img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .photo img:hover {
+            transform: scale(1.1);
+        }
+        .photo img:active {
             transform: scale(1.2);
+        }
+
+        /* 弹出图片样式 */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+        .modal:target {
+            display: flex;
         }
     </style>
 </head>
@@ -31,7 +63,6 @@
         <div class="sidebar">
             <h2>Menu</h2>
             <ul class="menu">
-                <li><a href="#menu">Menu</a></li>
                 <li><a href="#me">Me</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#photos">My Daily Life</a></li>
@@ -41,15 +72,15 @@
         <!-- 右侧主内容 -->
         <div class="main-content">
             <!-- 关于我 -->
-            <section id="about" class="section">
+            <section id="me" class="section">
                 <div class="header">
+                    <div class="intro">
+                        <h1>Gloria Hao</h1>
+                        <p><strong>From:</strong> China</p>
+                        <p><strong>Current Major:</strong> Management Information Systems (MIS)</p>
+                        <p><strong>Hobbies:</strong> Ballet, Crime Novels, German Shepherd Dogs, All Cats, Shooting Firearms</p>
+                    </div>
                     <img src="WechatIMG798.jpg" alt="Profile Photo" class="profile-photo">
-                </div>
-                <div class="intro">
-                    <h1>Gloria Hao</h1>
-                    <p><strong>From:</strong> China</p>
-                    <p><strong>Current Major:</strong> Management Information Systems (MIS)</p>
-                    <p><strong>Hobbies:</strong> Ballet, Crime Novels, German Shepherd Dogs, All Cats, Shooting Firearms</p>
                 </div>
             </section>
 
@@ -57,69 +88,44 @@
             <section id="resume" class="section">
                 <h2>Resume</h2>
                 <p><a href="Gloria.html" target="_blank">Click here to view my full resume</a></p>
-                <h3>Professional Experience</h3>
-                <ul>
-                    <li><strong>Data Analyst Intern</strong> - EchoPlus LLC (June 2024 – Sep 2024)
-                        <ul>
-                            <li>Consolidated data from 1.32 million users into a MySQL database for analysis.</li>
-                            <li>Improved sentiment analysis accuracy by 17% using Python.</li>
-                            <li>Boosted player retention by 10% through machine learning models.</li>
-                        </ul>
-                    </li>
-                    <li><strong>Accountant</strong> - Tianjin Yinghua International School (Sep 2021 – Mar 2024)
-                        <ul>
-                            <li>Improved cost tracking efficiency by 12% using Python dashboards.</li>
-                            <li>Managed $500,000 annual budget and optimized expenditure control.</li>
-                        </ul>
-                    </li>
-                    <li><strong>Finance Intern</strong> - China Coal Energy Company Limited (Mar 2021 – Sep 2021)
-                        <ul>
-                            <li>Increased reporting clarity by 35% through Tableau dashboards.</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <h3>Education</h3>
-                <p><strong>Santa Clara University</strong> - Master’s in Management Information Systems (MIS)</p>
-
-                <h3>Skills</h3>
-                <ul>
-                    <li>Data Analysis: Python, SQL, Tableau</li>
-                    <li>Financial Management: QuickBooks, ERP Systems</li>
-                    <li>Languages: English, Chinese</li>
-                </ul>
             </section>
-
+            
             <!-- 日常生活照片 -->
             <section id="photos" class="section">
                 <h2>Daily Life Photos</h2>
                 <div class="gallery">
                     <div class="photo">
-                        <img src="8231736453479_.pic.jpg" alt="Shooting Range" />
+                        <a href="#modal1"><img src="8231736453479_.pic.jpg" alt="At the Shooting Range with Classmates"></a>
                         <p>At the Shooting Range with Classmates</p>
                     </div>
                     <div class="photo">
-                        <img src="WechatIMG825.jpg" alt="German Shepherd Dog" />
+                        <a href="#modal2"><img src="WechatIMG825.jpg" alt="My Favorite Dog"></a>
                         <p>My Favorite Dog</p>
                     </div>
                     <div class="photo">
-                        <img src="8261736453666_.pic.jpg" alt="With Cousin" />
-                        <p>With My Cousin</p>
+                        <a href="#modal3"><img src="8281736454160_.pic.jpg" alt="Christmas with My Friend"></a>
+                        <p>Christmas with My Friend</p>
                     </div>
                     <div class="photo">
-                        <img src="8271736453765_.pic.jpg" alt="With Grandma" />
-                        <p>With My Grandma</p>
-                    </div>
-                    <div class="photo">
-                        <img src="8281736454160_.pic.jpg" alt="Christmas with Friend" />
-                        <p>Christmas with My Best Friend</p>
-                    </div>
-                    <div class="photo">
-                        <img src="8291736454271_.pic.jpg" alt="Ballet Dance" />
-                        <p>Practicing Ballet Dance</p>
+                        <a href="#modal4"><img src="8291736454271_.pic.jpg" alt="Practicing Ballet Dance with My Friend"></a>
+                        <p>Practicing Ballet Dance with My Friend</p>
                     </div>
                 </div>
             </section>
+
+            <!-- 弹出图片模态框 -->
+            <div id="modal1" class="modal">
+                <img src="8231736453479_.pic.jpg" alt="At the Shooting Range with Classmates">
+            </div>
+            <div id="modal2" class="modal">
+                <img src="WechatIMG825.jpg" alt="My Favorite Dog">
+            </div>
+            <div id="modal3" class="modal">
+                <img src="8281736454160_.pic.jpg" alt="Christmas with My Friend">
+            </div>
+            <div id="modal4" class="modal">
+                <img src="8291736454271_.pic.jpg" alt="Practicing Ballet Dance with My Friend">
+            </div>
         </div>
     </div>
 </body>
