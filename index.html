@@ -4,69 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gloria Hao - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 200px;
+            background-color: #333;
+            color: white;
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        /* Content styling */
+        .content {
+            margin-left: 200px;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .resume-link {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .resume-link a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .resume-link a:hover {
+            color: #007BFF;
+        }
+
+        .photos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .photos img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .info {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .info h2 {
+            margin: 10px 0;
+        }
+
+        .info p {
+            margin: 5px 0;
+        }
+
+    </style>
 </head>
 <body>
-    <div class="container">
-        <!-- 左侧导航栏 -->
-        <div class="sidebar">
-            <h2>Menu</h2>
-            <ul class="menu">
-                <li><a href="#about">Me</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#photos">My Daily Life</a></li>
+
+    <div class="sidebar">
+        <a href="#about">Me</a>
+        <a href="#resume">Resume</a>
+        <a href="#daily-life">My Daily Life</a>
+    </div>
+
+    <div class="content">
+        <h1>Gloria Hao</h1>
+
+        <div class="info">
+            <h2>From: China</h2>
+            <p><strong>Current Major:</strong> Management Information Systems (MIS)</p>
+            <p><strong>Hobbies:</strong></p>
+            <ul>
+                <li>Ballet</li>
+                <li>Crime Novels</li>
+                <li>German Shepherd Dogs</li>
+                <li>All Cats</li>
+                <li>Shooting Firearms</li>
             </ul>
         </div>
 
-        <!-- 主体内容 -->
-        <div class="main-content">
-            <!-- 关于我 -->
-            <section id="about" class="section">
-                <h1>Gloria Hao</h1>
-                <p><strong>From:</strong> China</p>
-                <p><strong>Major:</strong> Management Information Systems (MIS)</p>
-                <p><strong>Hobbies:</strong></p>
-                <p>Ballet, Crime Novels, German Shepherd Dogs, All Cats, Shooting Firearms</p>
-                <p>I love exploring new hobbies and enjoy spending quality time with my friends and family. I am also passionate about learning new skills in IT and technology law.</p>
-            </section>
+        <div id="resume" class="resume-link">
+            <p><a href="#">Click here to view my full resume</a></p>
+        </div>
 
-            <!-- 简历部分 -->
-            <section id="resume" class="section">
-                <h2>Resume</h2>
-                <p><a href="Gloria.html" target="_blank">Click here to view my full resume</a></p>
-            </section>
-
-            <!-- 日常生活照片 -->
-            <section id="photos" class="section">
-                <h2>Daily Life Photos</h2>
-                <div class="gallery">
-                    <div class="photo">
-                        <img src="WechatIMG832.jpg" alt="Shooting with Friends">
-                        <p>At the Shooting Range with Friends</p>
-                    </div>
-                    <div class="photo">
-                        <img src="8251736453542_.pic.jpg" alt="German Shepherd Dog">
-                        <p>My Favorite Dog</p>
-                    </div>
-                    <div class="photo">
-                        <img src="8261736453666_.pic.jpg" alt="With Cousin">
-                        <p>With My Cousin</p>
-                    </div>
-                    <div class="photo">
-                        <img src="8271736453765_.pic.jpg" alt="With Grandma">
-                        <p>With My Grandma</p>
-                    </div>
-                    <div class="photo">
-                        <img src="8281736454160_.pic.jpg" alt="Christmas with Friends">
-                        <p>Christmas with Friends</p>
-                    </div>
-                    <div class="photo">
-                        <img src="8231736453479_.pic.jpg" alt="Exploring Nature">
-                        <p>Exploring Nature</p>
-                    </div>
-                </div>
-            </section>
+        <h2 id="daily-life">Daily Life Photos</h2>
+        <div class="photos">
+            <img src="https://via.placeholder.com/300" alt="Photo 1">
+            <img src="https://via.placeholder.com/300" alt="Photo 2">
         </div>
     </div>
+
 </body>
 </html>
