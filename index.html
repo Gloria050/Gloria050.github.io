@@ -15,7 +15,32 @@
             margin: 20px 0;
         }
 
-        /* 图片画廊调整 */
+        /* 主内容区图片和布局样式调整 */
+        .header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .header .profile-photo {
+            width: 400px;
+            height: auto;
+            border-radius: 10px;
+            border: 5px solid #ccc;
+        }
+        .header .intro {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .header h1 {
+            font-size: 2.5em;
+        }
+        .header p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+
+        /* 图片画廊样式 */
         .gallery {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -26,34 +51,25 @@
             height: auto;
             border-radius: 10px;
             cursor: pointer;
-            transition: transform 0.3s ease;
         }
-        .photo img:hover {
-            transform: scale(1.1);
-        }
-        .photo img:active {
-            transform: scale(1.2);
+        .photo p {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1em;
         }
 
-        /* 弹出图片样式 */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            justify-content: center;
-            align-items: center;
+        /* 层级字体样式 */
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
         }
-        .modal img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 10px;
+        h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
         }
-        .modal:target {
-            display: flex;
+        p, li {
+            font-size: 1.2em;
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -78,7 +94,7 @@
                         <h1>Gloria Hao</h1>
                         <p><strong>From:</strong> China</p>
                         <p><strong>Current Major:</strong> Management Information Systems (MIS)</p>
-                        <p><strong>Hobbies:</strong> Ballet, Crime Novels, German Shepherd Dogs, All Cats, Shooting Firearms</p>
+                        <p><strong>Hobbies:</strong> Ballet, Crime Novels,<br> German Shepherd Dogs, All Cats,<br> Shooting Firearms</p>
                     </div>
                     <img src="WechatIMG798.jpg" alt="Profile Photo" class="profile-photo">
                 </div>
@@ -110,22 +126,16 @@
                         <a href="#modal4"><img src="8291736454271_.pic.jpg" alt="Practicing Ballet Dance with My Friend"></a>
                         <p>Practicing Ballet Dance with My Friend</p>
                     </div>
+                    <div class="photo">
+                        <a href="#modal5"><img src="8311736457678_.pic.jpg" alt="With My Family"></a>
+                        <p>With My Family</p>
+                    </div>
+                    <div class="photo">
+                        <a href="#modal6"><img src="8321736457689_.pic.jpg" alt="Exploring Nature"></a>
+                        <p>Exploring Nature</p>
+                    </div>
                 </div>
             </section>
-
-            <!-- 弹出图片模态框 -->
-            <div id="modal1" class="modal">
-                <img src="8231736453479_.pic.jpg" alt="At the Shooting Range with Classmates">
-            </div>
-            <div id="modal2" class="modal">
-                <img src="WechatIMG825.jpg" alt="My Favorite Dog">
-            </div>
-            <div id="modal3" class="modal">
-                <img src="8281736454160_.pic.jpg" alt="Christmas with My Friend">
-            </div>
-            <div id="modal4" class="modal">
-                <img src="8291736454271_.pic.jpg" alt="Practicing Ballet Dance with My Friend">
-            </div>
         </div>
     </div>
 </body>
