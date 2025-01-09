@@ -5,73 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gloria Hao - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* 左侧导航栏文字样式调整 */
-        .sidebar {
-            font-size: 1.5em;
-            text-align: center;
-        }
-        .sidebar .menu li {
-            margin: 20px 0;
-        }
-
-        /* 主内容区图片和布局样式调整 */
-        .header {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
-        .header .profile-photo {
-            width: 400px;
-            height: auto;
-            border-radius: 10px;
-            border: 5px solid #ccc;
-        }
-        .header .intro {
-            flex: 1;
-            margin-right: 20px;
-        }
-        .header h1 {
-            font-size: 2.5em;
-        }
-        .header p {
-            font-size: 1.2em;
-            line-height: 1.5;
-            margin: 10px 0;
-        }
-
-        /* 图片画廊样式 */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-        .photo img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-        .photo p {
-            text-align: center;
-            margin-top: 10px;
-            font-size: 1em;
-        }
-
-        /* 层级字体样式 */
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        h2 {
-            font-size: 2em;
-            margin-bottom: 15px;
-        }
-        p, li {
-            font-size: 1.2em;
-            line-height: 1.6;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
@@ -79,24 +12,26 @@
         <div class="sidebar">
             <h2>Menu</h2>
             <ul class="menu">
-                <li><a href="#me">Me</a></li>
+                <li><a href="#about">About Me</a></li>
                 <li><a href="#resume">Resume</a></li>
-                <li><a href="#photos">My Daily Life</a></li>
+                <li><a href="#photos">Daily Life Photos</a></li>
             </ul>
         </div>
 
         <!-- 右侧主内容 -->
         <div class="main-content">
             <!-- 关于我 -->
-            <section id="me" class="section">
+            <section id="about" class="section">
                 <div class="header">
-                    <div class="intro">
-                        <h1>Gloria Hao</h1>
-                        <p><strong>From:</strong> China</p>
-                        <p><strong>Current Major:</strong> Management Information Systems (MIS)</p>
-                        <p><strong>Hobbies:</strong> Ballet, Crime Novels,<br> German Shepherd Dogs, All Cats,<br> Shooting Firearms</p>
-                    </div>
-                    <img src="WechatIMG798.jpg" alt="Profile Photo" class="profile-photo">
+                    <img src="your-photo.jpg" alt="Profile Photo" class="profile-photo">
+                </div>
+                <div class="intro">
+                    <h1>Gloria Hao</h1>
+                    <p><strong>From:</strong> China</p>
+                    <p><strong>Major:</strong> Management Information Systems (MSIS)</p>
+                    <p><strong>Hobbies:</strong></p>
+                    <p>&nbsp;&nbsp;Ballet, Crime Novels, German Shepherd Dogs,</p>
+                    <p>&nbsp;&nbsp;All Cats, Shooting Firearms</p>
                 </div>
             </section>
 
@@ -105,34 +40,34 @@
                 <h2>Resume</h2>
                 <p><a href="Gloria.html" target="_blank">Click here to view my full resume</a></p>
             </section>
-            
+
             <!-- 日常生活照片 -->
             <section id="photos" class="section">
                 <h2>Daily Life Photos</h2>
                 <div class="gallery">
                     <div class="photo">
-                        <a href="#modal1"><img src="8231736453479_.pic.jpg" alt="At the Shooting Range with Classmates"></a>
-                        <p>At the Shooting Range with Classmates</p>
+                        <img src="WechatIMG832.jpg" alt="Shooting with Friends" />
+                        <p>At the Shooting Range with Friends</p>
                     </div>
                     <div class="photo">
-                        <a href="#modal2"><img src="WechatIMG825.jpg" alt="My Favorite Dog"></a>
+                        <img src="8251736453542_.pic.jpg" alt="German Shepherd Dog" />
                         <p>My Favorite Dog</p>
                     </div>
                     <div class="photo">
-                        <a href="#modal3"><img src="8281736454160_.pic.jpg" alt="Christmas with My Friend"></a>
-                        <p>Christmas with My Friend</p>
+                        <img src="8261736453666_.pic.jpg" alt="With Cousin" />
+                        <p>With My Cousin</p>
                     </div>
                     <div class="photo">
-                        <a href="#modal4"><img src="8291736454271_.pic.jpg" alt="Practicing Ballet Dance with My Friend"></a>
-                        <p>Practicing Ballet Dance with My Friend</p>
+                        <img src="8271736453765_.pic.jpg" alt="With Grandma" />
+                        <p>With My Grandma</p>
                     </div>
                     <div class="photo">
-                        <a href="#modal5"><img src="8311736457678_.pic.jpg" alt="With My Family"></a>
-                        <p>With My Family</p>
+                        <img src="8281736454160_.pic.jpg" alt="Christmas with Friends" />
+                        <p>Christmas with Friends</p>
                     </div>
                     <div class="photo">
-                        <a href="#modal6"><img src="8321736457689_.pic.jpg" alt="Exploring Nature"></a>
-                        <p>Exploring Nature</p>
+                        <img src="8231736453479_.pic.jpg" alt="Shooting with Friends" />
+                        <p>At the Shooting Range with Friends</p>
                     </div>
                 </div>
             </section>
@@ -140,3 +75,4 @@
     </div>
 </body>
 </html>
+
