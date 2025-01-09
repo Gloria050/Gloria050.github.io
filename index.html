@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gloria Hao - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 左侧导航栏文字样式调整 */
+        .sidebar {
+            font-size: 1.5em;
+            text-align: center;
+        }
+        .sidebar .menu li {
+            margin: 20px 0;
+        }
+
+        /* 鼠标悬停图片放大效果 */
+        .gallery .photo img {
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .gallery .photo img:hover {
+            transform: scale(1.2);
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -12,9 +31,10 @@
         <div class="sidebar">
             <h2>Menu</h2>
             <ul class="menu">
-                <li><a href="#about">About Me</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#me">Me</a></li>
                 <li><a href="#resume">Resume</a></li>
-                <li><a href="#photos">Daily Life Photos</a></li>
+                <li><a href="#photos">My Daily Life</a></li>
             </ul>
         </div>
 
