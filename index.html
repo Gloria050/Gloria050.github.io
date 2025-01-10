@@ -1,125 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Zhixin (Gloria) Hao's Academic Webpage" />
-    <meta name="author" content="Zhixin (Gloria) Hao" />
-    <title>Zhixin (Gloria) Hao</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gloria Hao - Personal Webpage</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
 
-    <!-- Icon -->
-    <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
+        /* Sidebar Styles */
+        .sidebar {
+            width: 200px;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+        }
 
-    <!-- Bootstrap icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        .sidebar h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
 
-    <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
-        rel="stylesheet" />
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+            font-size: 18px;
+        }
 
-    <!-- Core theme CSS (includes Bootstrap) -->
-    <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
 
+        /* Main Content Styles */
+        .main-content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        .main-content h1, .main-content h2 {
+            color: black;
+        }
+
+        .profile-image {
+            float: right;
+            margin-left: 20px;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Daily Life Photos */
+        #daily-life {
+            margin-top: 20px;
+        }
+
+        #daily-life h2 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .photos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .photos .photo-container {
+            flex: 1 1 calc(50% - 20px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .photos img {
+            width: 100%;
+            height: auto;
+        }
+
+        .photo-caption {
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+    </style>
 </head>
+<body>
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <a href="#me">Me</a>
+        <a href="Gloria.html" target="_blank">Resume</a>
+        <a href="#daily-life">My Daily Life</a>
+    </div>
 
-<body id="page-top">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-        <div class="container px-5">
-            <a class="navbar-brand fw-bold" href="#page-top">Zhixin (Gloria) Hao</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                MENU
-                <i class="bi-list"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="#home">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="#projects">PROJECTS</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="#hobbies">HOBBIES</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div class="main-content">
+        <!-- About Me Section -->
+        <section id="me">
+            <h1>Gloria Hao</h1>
+            <img src="7981736321440_.pic.jpg" alt="Gloria Hao" class="profile-image">
+            <p><strong>From:</strong> China</p>
+            <p><strong>Current Major:</strong> Management Information Systems (MIS)</p>
+            <p><strong>Hobbies:</strong> Ballet, Crime Novels, German Shepherd Dogs, All Cats, Shooting Firearms</p>
+        </section>
 
-    <!-- Home Section -->
-    <section class="bg-gradient-primary-to-secondary-light" id="home">
-        <div class="container px-5">
-            <header>
-                <h2>About Me</h2>
-            </header>
-            <p>
-                <strong>Education:</strong> Master of Information Systems, Santa Clara University (Expected 2026)<br>
-                Bachelor of Accounting, Hubei University of Economics (2021, GPA: 3.3/4.0)
-            </p>
-            <p>
-                <strong>Professional Experience:</strong><br>
-                Data Analyst Intern, EchoPlus LLC (2024)<br>
-                Accountant, Tianjin Yinghua International School (2021-2024)<br>
-                Finance Intern, Prudential Hong Kong Limited (2019)
-            </p>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="bg-gradient-primary-to-secondary-gray" id="projects">
-        <div class="container px-5">
-            <header>
-                <h2>Projects</h2>
-            </header>
-            <p>
-                <strong>Sentiment Analysis on Twitter/X (2024):</strong> Led analysis on 350K+ tweets containing the keyword "Trump," leveraging Python and machine learning techniques.<br>
-                <strong>Comprehensive Data Analysis of Yelp Reviews:</strong> Consolidated and analyzed data from 1.32 million users using MySQL and TextBlob in Python.
-            </p>
-        </div>
-    </section>
-
-    <!-- Hobbies Section -->
-    <section class="bg-gradient-primary-to-secondary-light" id="hobbies">
-        <div class="container px-5">
-            <header>
-                <h2>Hobbies</h2>
-            </header>
-            <p>
-                Ballet, crime novels, German Shepherds, all cats, and shooting.
-            </p>
-            <div class="row">
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img class="img-fluid shadow rounded" src="/mnt/data/8321736458665_.pic_hd.jpg" alt="Hobby photo 1">
+        <!-- Daily Life Photos Section -->
+        <section id="daily-life">
+            <h2>Daily Life Photos</h2>
+            <div class="photos">
+                <div class="photo-container">
+                    <img src="8231736453479_.pic.jpg" alt="Shooting Range">
+                    <div class="photo-caption">Shooting Range</div>
                 </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img class="img-fluid shadow rounded" src="/mnt/data/8281736454160_.pic.jpg" alt="Hobby photo 2">
+                <div class="photo-container">
+                    <img src="8251736453542_.pic.jpg" alt="German Shepherd Dog">
+                    <div class="photo-caption">My Favorite Dog</div>
                 </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img class="img-fluid shadow rounded" src="/mnt/data/8271736453765_.pic.jpg" alt="Hobby photo 3">
+                <div class="photo-container">
+                    <img src="8261736453666_.pic.jpg" alt="With a Child">
+                    <div class="photo-caption">With a Lovely Child</div>
                 </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img class="img-fluid shadow rounded" src="/mnt/data/8261736453666_.pic.jpg" alt="Hobby photo 4">
+                <div class="photo-container">
+                    <img src="8271736453765_.pic.jpg" alt="Family Dining">
+                    <div class="photo-caption">Family Dinner</div>
                 </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img class="img-fluid shadow rounded" src="/mnt/data/8251736453542_.pic.jpg" alt="Hobby photo 5">
+                <div class="photo-container">
+                    <img src="8281736454160_.pic.jpg" alt="Christmas Tree">
+                    <div class="photo-caption">Christmas Time</div>
                 </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <img class="img-fluid shadow rounded" src="/mnt/data/8231736453479_.pic.jpg" alt="Hobby photo 6">
+                <div class="photo-container">
+                    <img src="8321736458665_.pic_hd.jpg" alt="Shooting Practice">
+                    <div class="photo-caption">Shooting Practice with Team</div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-bottom text-center py-5">
-        <div class="container px-5">
-            <div class="text-white-50 small">
-                <div>&copy; 2026 Zhixin (Gloria) Hao</div>
-                <a href="https://www.linkedin.com/in/zhixin-hao-33b85b328">LinkedIn</a>
-            </div>
-        </div>
-    </footer>
+        </section>
+    </div>
 </body>
-
 </html>
