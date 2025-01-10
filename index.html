@@ -55,51 +55,59 @@
             width: 100%;
             border-radius: 10px;
         }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
     <div id="sidebar">
-        <h2>Life Photos</h2>
-        <div class="photo">
-            <img src="WechatIMG832.jpg" alt="Life Photo 1">
-        </div>
-        <div class="photo">
-            <img src="WechatIMG825.jpg" alt="Life Photo 2">
-        </div>
-        <div class="photo">
-            <img src="8281736454160_.pic.jpg" alt="Life Photo 3">
-        </div>
-        <div class="photo">
-            <img src="8271736453765_.pic.jpg" alt="Life Photo 4">
-        </div>
-        <div class="photo">
-            <img src="8261736453666_.pic.jpg" alt="Life Photo 5">
-        </div>
-        <div class="photo">
-            <img src="8231736453479_.pic.jpg" alt="Life Photo 6">
-        </div>
+        <h2>Interests</h2>
+        <p>I enjoy exploring nature, reading about philosophy, and practicing mindfulness. In my leisure time, I like photography, traveling, and spending quality time with my family and friends.</p>
     </div>
     <div id="content">
         <h1>Zhixin (Gloria) Hao</h1>
         <img src="WechatIMG798.jpg" alt="Zhixin (Gloria) Hao" class="profile-image">
-        <p>Email: <a href="mailto:zhao3@scu.edu">zhao3@scu.edu</a></p>
+        <p>Email: <a href=\"mailto:zhao3@scu.edu\">zhao3@scu.edu</a></p>
+<p><a href=\"Gloria_Resume.pdf\" target=\"_blank\">Download My Resume</a></p>
         <p>Phone: 516-468-2849</p>
         <p>LinkedIn: <a href="http://www.linkedin.com/in/zhixin-hao-33b85b328" target="_blank">www.linkedin.com/in/zhixin-hao-33b85b328</a></p>
 
         <div class="section">
+            <h2>Life Photos</h2>
+            <div class="gallery">
+                <img src="WechatIMG832.jpg" alt="Life Photo 1">
+                <img src="WechatIMG825.jpg" alt="Life Photo 2">
+                <img src="8281736454160_.pic.jpg" alt="Life Photo 3">
+                <img src="8271736453765_.pic.jpg" alt="Life Photo 4">
+                <img src="8261736453666_.pic.jpg" alt="Life Photo 5">
+                <img src="8231736453479_.pic.jpg" alt="Life Photo 6">
+            </div>
+        </div>
+
+        <div class="section">
             <h2>Education</h2>
             <p><strong>Santa Clara University</strong> - Master of Information System (Expected June 2026)</p>
-            <p>Courses: Data Analytics with Python, Data Management, Natural Language Processing, Big Data Modeling, Reinforcement Learning</p>
+            <p>Courses: Data Analytics with Python, Data Management, Systems Analysis and Design, Advanced Business Analytics, Natural Language Processing, Big Data Modeling, Reinforcement Learning</p>
             <p><strong>Hubei University of Economics</strong> - Bachelor of Accounting | GPA: 3.3/4.0 (June 2021)</p>
+            <p>Courses: Accounting Information System, Supply Chain Management, Database and Application, Advanced Mathematics</p>
         </div>
 
         <div class="section">
             <h2>Professional Experience</h2>
             <p><strong>Data Analyst Intern</strong> - EchoPlus LLC (June 2024 – Sep 2024, Santa Clara, CA)</p>
             <ul>
-                <li>Consolidated data from six sources (1.32 million Yelp users) into a MySQL database for efficient analysis.</li>
-                <li>Improved sentiment analysis precision by 17% using TextBlob in Python on 5.26 million reviews.</li>
-                <li>Optimized player retention by 10% using Random Forest and K-Means Clustering for behavior analysis.</li>
+                <li>Consolidated data from six sources, including 1.32 million users, Yelp reviews, and business projections, into a structured MySQL database for efficient analysis.</li>
+                <li>Improved sentiment analysis precision by 17% using TextBlob in Python on a corpus of 5.26 million reviews.</li>
+                <li>Designed and executed large-scale A/B tests to analyze user engagement metrics using Two-sample T-Test in Python.</li>
+                <li>Optimized player retention by 10% using Random Forest and K-Means clustering models to analyze player behavior patterns.</li>
             </ul>
             <p><strong>Accountant</strong> - Tianjin Yinghua International School (Sep 2021 – Mar 2024, Tianjin, CN)</p>
             <ul>
@@ -109,20 +117,25 @@
             <ul>
                 <li>Increased reporting clarity by 35% through Tableau dashboards for client trend analysis.</li>
             </ul>
+            <p><strong>Finance Intern</strong> - Prudential Hong Kong Limited (Jul 2019 – Jul 2019, Hong Kong, CN)</p>
+            <ul>
+                <li>Developed interactive financial dashboards using Tableau, enabling senior managers to gain insights into policy performance and client trends.</li>
+            </ul>
         </div>
 
         <div class="section">
             <h2>Skills</h2>
-            <p><strong>Programming:</strong> SQL, Python (Pandas, Scikit-Learn, Numpy, Matplotlib, PyTorch), R</p>
-            <p><strong>Analytics:</strong> Machine Learning (Random Forest, XGBoost, NLP, Time Series Analysis), Data Visualization (Tableau, PowerBI, Shiny)</p>
+            <p><strong>Programming:</strong> SQL, Python (Pandas, Scikit-Learn, Numpy, Matplotlib, Seaborn, PyTorch), R</p>
+            <p><strong>Analytics:</strong> Machine Learning (Random Forest, XGBoost, SVM, KNN, Logistic Regression), A/B Testing, NLP, Time Series Analysis</p>
+            <p><strong>Visualization:</strong> Tableau, Power BI, Shiny</p>
         </div>
 
         <div class="section">
             <h2>Projects</h2>
             <p><strong>Sentiment Analysis on Twitter/X (2024)</strong></p>
             <ul>
-                <li>Analyzed 350K+ tweets about Trump, uncovering a weak negative sentiment using Python.</li>
-                <li>Improved sentiment classification accuracy with machine learning techniques.</li>
+                <li>Led sentiment analysis on 350K+ tweets containing the keyword "Trump," uncovering a weak negative sentiment using Python.</li>
+                <li>Applied machine learning techniques to enhance sentiment classification accuracy.</li>
             </ul>
         </div>
     </div>
